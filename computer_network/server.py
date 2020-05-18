@@ -10,11 +10,25 @@
 """
 import json
 import socket
+import sys
+import os
+import time
 
 from computer_network.processor.net.parser import IPParser
 from computer_network.processor.trans.parser import UDPParser, TCPParser
 from operate_system.pool import ThreadPool as tp
 from operate_system.task import AsyncTask
+
+
+def log(data):
+    log_dir = r'D:\OneDrive\Documents\Python_things\Network\computer_network\logs'
+    time_dir = log_dir + '\\' + time.strftime('%Y%m%d%H%M', time.localtime(time.time()))
+    time_path = time.strftime('%Y%m%d%H%M%S', time.localtime(time.time()))
+    path = time_dir + '\\' + time_path + '.log'
+    if not os.path.exists(time_dir):
+        os.makedirs(time_dir)
+    with open(path, "a") as fp:
+        fp.write(data)
 
 
 class ProcessTask(AsyncTask):
@@ -43,8 +57,7 @@ class ProcessTask(AsyncTask):
 class Server():
     def __init__(self):
         self.sock = socket.socket(socket.AF_INET, socket.SOCK_RAW, socket.IPPROTO_IP)
-        self.ip = '192.168.0.106'
-        # self.ip = '118.74.236.251'
+        self.ip = '192.168.0.189'
         self.port = 8888
         self.sock.bind((self.ip, self.port))
         self.sock.ioctl(socket.SIO_RCVALL, socket.RCVALL_ON)
@@ -64,6 +77,7 @@ class Server():
                 result,
                 indent=4
             )
+            log(result)
             print(result)
 
 
