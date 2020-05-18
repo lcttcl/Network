@@ -1,0 +1,121 @@
+{
+    "network_header": {
+        "ip_version": 4,
+        "iph_length": 20,
+        "packet_length": 86,
+        "TTL": 64,
+        "protocol": 6,
+        "iph_checksum": 46716,
+        "src_ip": "192.168.0.189",
+        "dst_ip": "140.143.213.113"
+    },
+    "transport_header": {
+        "src_port": 53844,
+        "dst_port": 443,
+        "seq_num": 2573810429,
+        "ack_num": 955293634,
+        "data_offset": 5,
+        "flag": {
+            "FIN": 0,
+            "SYN": 0,
+            "RST": 0,
+            "PSH": 1,
+            "ACK": 1,
+            "URG": 0
+        },
+        "win_size": 516,
+        "checksum": 27982,
+        "urg_point": 0,
+        "data": "....)FE.=.K.e... u.A.4.....@}.$.V......U...]>."
+    }
+}{
+    "network_header": {
+        "ip_version": 4,
+        "iph_length": 20,
+        "packet_length": 86,
+        "TTL": 64,
+        "protocol": 6,
+        "iph_checksum": 46716,
+        "src_ip": "192.168.0.189",
+        "dst_ip": "140.143.213.113"
+    },
+    "transport_header": {
+        "src_port": 53844,
+        "dst_port": 443,
+        "seq_num": 2573810429,
+        "ack_num": 955293634,
+        "data_offset": 5,
+        "flag": {
+            "FIN": 0,
+            "SYN": 0,
+            "RST": 0,
+            "PSH": 1,
+            "ACK": 1,
+            "URG": 0
+        },
+        "win_size": 516,
+        "checksum": 27982,
+        "urg_point": 0,
+        "data": "....)FE.=.K.e... u.A.4.....@}.$.V......U...]>."
+    }
+}{
+    "network_header": {
+        "ip_version": 4,
+        "iph_length": 20,
+        "packet_length": 40,
+        "TTL": 64,
+        "protocol": 6,
+        "iph_checksum": 46761,
+        "src_ip": "192.168.0.189",
+        "dst_ip": "140.143.213.113"
+    },
+    "transport_header": {
+        "src_port": 53844,
+        "dst_port": 443,
+        "seq_num": 2573810475,
+        "ack_num": 955293676,
+        "data_offset": 5,
+        "flag": {
+            "FIN": 0,
+            "SYN": 0,
+            "RST": 0,
+            "PSH": 0,
+            "ACK": 1,
+            "URG": 0
+        },
+        "win_size": 516,
+        "checksum": 2281,
+        "urg_point": 0,
+        "data": ""
+    }
+}{
+    "network_header": {
+        "ip_version": 4,
+        "iph_length": 20,
+        "packet_length": 40,
+        "TTL": 64,
+        "protocol": 6,
+        "iph_checksum": 46761,
+        "src_ip": "192.168.0.189",
+        "dst_ip": "140.143.213.113"
+    },
+    "transport_header": {
+        "src_port": 53844,
+        "dst_port": 443,
+        "seq_num": 2573810475,
+        "ack_num": 955293676,
+        "data_offset": 5,
+        "flag": {
+            "FIN": 0,
+            "SYN": 0,
+            "RST": 0,
+            "PSH": 0,
+            "ACK": 1,
+            "URG": 0
+        },
+        "win_size": 516,
+        "checksum": 2281,
+        "urg_point": 0,
+        "data": ""
+    }
+}
